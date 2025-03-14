@@ -2,8 +2,6 @@ package ru.Pablo.TaskOne.entities;
 
 
 import jakarta.persistence.*;
-
-
 import java.io.Serializable;
 
 @Entity
@@ -32,7 +30,6 @@ public class Users implements Serializable {
     public Users() {
     }
 
-    // Конструктор со всеми полями
     public Users(long id, String login, String password, String email, String role, String note) {
         this.id = id;
         this.login = login;
@@ -42,7 +39,6 @@ public class Users implements Serializable {
         this.note = note;
     }
 
-    // Геттеры (getters)
     public long getId() {
         return id;
     }
@@ -67,7 +63,6 @@ public class Users implements Serializable {
         return note;
     }
 
-    // Сеттеры (setters)
     public void setId(long id) {
         this.id = id;
     }
@@ -92,7 +87,6 @@ public class Users implements Serializable {
         this.note = note;
     }
 
-    //Метод toString() для дебага
 
     @Override
     public String toString() {
