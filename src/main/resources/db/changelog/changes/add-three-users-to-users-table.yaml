@@ -1,0 +1,60 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: PavelButorin
+      comment: "Added 3 users to the users table"
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: login
+                  value: "Yarik"
+              - column:
+                  name: password
+                  value: "300k/ns"
+              - column:
+                  name: email
+                  value: "RedSonyaLover@gmail.com"
+              - column:
+                  name: role
+                  value: "admin"
+              - column:
+                  name: note
+                  value: "Come get me, Jedi!"
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: login
+                  value: "Bogdan"
+              - column:
+                  name: password
+                  value: "VasyutinskiiGonnaDie"
+              - column:
+                  name: email
+                  value: "BeautifulAce@mail.ru"
+              - column:
+                  name: role
+                  value: "admin"
+              - column:
+                  name: note
+                  value: "Do you really need this knife, Nestor?"
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: login
+                  value: "Slavik"
+              - column:
+                  name: password
+                  value: "PaprikashMaker"
+              - column:
+                  name: email
+                  value: "PosmolimWithVasiliyPetrovich@yandex.ru"
+              - column:
+                  name: role
+                  value: "admin"
+              - column:
+                  name: note
+                  value: "Stavropol in my heart"
