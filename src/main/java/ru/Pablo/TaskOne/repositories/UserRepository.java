@@ -2,8 +2,8 @@ package ru.Pablo.TaskOne.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import ru.Pablo.TaskOne.entities.Users;
+import ru.Pablo.TaskOne.entities.User;
 
 @Repository
-public interface UsersRepository extends JpaRepository<Users,Long> {
+public interface UserRepository extends JpaRepository<User,Long> {
 }
