@@ -23,4 +23,10 @@ public class UserController {
         return userService.findAll();
     }
 
+    @GetMapping("/teachers")
+    public List<String> teachers(){
+        return List.of("Ярослав Викторович", "Богдан Валерьевич", "и ещё Славик!");
+    }
+
+
 }

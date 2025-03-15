@@ -17,8 +17,4 @@ class TimeController {
         return ResponseEntity.ok(LocalDateTime.now());
     }
 
-    @GetMapping("/teachers")
-    public List<String> teachers(){
-        return List.of("Ярослав Викторович", "Богдан Валерьевич", "и ещё Славик!");
-    }
 }
