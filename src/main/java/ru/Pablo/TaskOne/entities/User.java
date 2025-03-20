@@ -2,7 +2,7 @@ package ru.Pablo.TaskOne.entities;
 
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 
 
 import java.io.Serializable;
@@ -10,8 +10,13 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "users")
-@Data
-public class User implements Serializable {
+@Getter
+@Setter
+@EqualsAndHashCode
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
