@@ -17,10 +17,13 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public ResponseEntity<User> findById(Long id) {
-
-        var user = userRepository.findAll().stream().filter(p->(p.getId()==id)).findFirst();
-        System.out.println(user);
-        return ResponseEntity.ok(user.get());
+    public User findById(Long id) {
+        return userRepository.findById(id).orElseThrow();//()->new UserNotFoundException("User not found with id:"+id));
     }
 }
+
+//class UserNotFoundException extends RuntimeException{
+//    public UserNotFoundException(String message){
+//        super(message);
+//    }
+//}

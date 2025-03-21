@@ -12,15 +12,13 @@ import java.io.Serializable;
 @Table(name = "users")
 @Getter
 @Setter
-@EqualsAndHashCode
-@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
-    private long id;
+    private Long id;
 
     @Column(name="login", nullable = false, unique = true)
     private String login;
